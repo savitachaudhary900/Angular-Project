@@ -1,0 +1,27 @@
+<h1> API calling !</h1>
+<button (click)="getData()"> Get Oll Data</button>
+
+
+<table border="1px">
+  <thead>
+    <tr >
+    
+      <th>id</th>
+      <th>todo</th>
+      
+      <th>completed</th>
+      <th>userId</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of toDo">
+    
+      <td>{{task.id}}</td>
+      <td>{{task.todo}}</td>
+      <td>{{task.completed}}</td>
+      <td>{{task.userId}}</td>
+     
+    </tr>
+  </tbody>
+</table>
